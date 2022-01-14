@@ -2,7 +2,7 @@
 
 const urlDroplet = "https://proxey.xyz/tomcat/exam";
 const urlLocal = "http://localhost:8080/exam";
-export const myUrl = urlLocal;
+export const myUrl = urlDroplet;
 
 export const getAllAssistants = `${myUrl}/api/cw/allAssistants`
 export const bookingUrl = `${myUrl}/api/cw/book`
