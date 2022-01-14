@@ -34,7 +34,7 @@ function Header({
       <Content>
         <h1>
           <NavLink className="header_nav" to="/">
-            Startcoder
+            Exam 2022
           </NavLink>
         </h1>
         <Menu>

@@ -11,8 +11,8 @@ export const GlobalStyle = createGlobalStyle`
   --fs-400: 1.125rem;
   --fs-300: 1rem;
   --fs-200: 0.875rem;
-  --primary-color: 0, 0%, 11%;
-  --secondary-color: 122, 39%, 49%;
+  --primary-color: 0, 0%, 6%;
+  --secondary-color: 227, 100%, 60%;
 }
 
 

@@ -11,7 +11,7 @@ function LoggedIn() {
 
   return (
     <div>
-      <h2>Poggers in the chat!!</h2>
+      <h2>Programming exam 2022</h2>
     </div>
   );
 }

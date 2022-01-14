@@ -11,11 +11,11 @@ function SideBar() {
     <Wrapper>
       <Content>
         <h2>EndPoints</h2>
-        <Link to="/all">
-          <Navs>View all users</Navs>
+        <Link to="/allAssistants">
+          <Navs>View all washing assistants</Navs>
         </Link>
-        <Link to="/users">
-          <Navs>Users</Navs>
+        <Link to="/makebooking">
+          <Navs>Make a booking</Navs>
         </Link>
         <Link to="/third">
           <Navs>Third Endpoint</Navs>
@@ -23,9 +23,11 @@ function SideBar() {
         <Link to="/fourth">
           <Navs>Fourth Endpoint</Navs>
         </Link>
-        <Link to="/fifth">
-          <Navs>Fifth Endpoint</Navs>
-        </Link>
+        {sessionStorage.getItem('roles') === '"admin"' && (
+          <Link className="side_nav" to= "/admin">
+            <Navs>Admin</Navs>
+            </Link>
+        )}
       </Content>
     </Wrapper>
   );

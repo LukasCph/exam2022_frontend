@@ -9,7 +9,9 @@ import Home from "./components/Home";
 import Login from "./components/Login";
 import SideBar from "./components/SideBar";
 import Signup from "./components/Signup";
-import UserEndPoint from "./components/Endpoints/UserEndPoint";
+import AssistantEndpoint from "./components/Endpoints/AssistantEndpoint";
+import BookingEndpoint from "./components/Endpoints/BookingEndpoint";
+import AdminEndpoint from "./components/Endpoints/AdminEndpoint";
 
 // Styles
 import { GlobalStyle } from "./GlobalStyle";
@@ -51,7 +53,7 @@ function App() {
             />
           }
         />
-        ¨
+        
         <Route
           path="/signup"
           element={
@@ -61,11 +63,11 @@ function App() {
             />
           }
         />
-        <Route path="/all" element={<UserEndPoint />} />
-        <Route path="/users" element={<UserEndPoint />} />
-        <Route path="/third" element={<UserEndPoint />} />
-        <Route path="/fourth" element={<UserEndPoint />} />
-        <Route path="/fifth" element={<UserEndPoint />} />
+        <Route path="/allAssistants" element={<AssistantEndpoint />} />
+        <Route path="/makebooking" element ={<BookingEndpoint/>}/>
+        <Route path="/third" />
+        <Route path="/forth" />
+        <Route path="/admin" element ={<AdminEndpoint/>}/>
       </Routes>
       <GlobalStyle />
     </Router>
